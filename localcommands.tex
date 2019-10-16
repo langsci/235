@@ -42,3 +42,9 @@ not be patched.}}}
     \field{pubstate}
     \literal{nodate}
 }
+
+\renewbibmacro*{addendum+pubstate}{% Thanks to https://tex.stackexchange.com/a/154367 for the idea
+  \printfield{addendum}%
+  \iffieldequalstr{labeldatesource}{pubstate}{}
+  {\newunit\newblock\printfield{pubstate}}
+}
