@@ -231,7 +231,7 @@
 % 	\AdditionalFontImprint{Korean}}
 \DeclareVoidOption{arabicfont}{
 	\AtEndPreamble{\newfontfamily\arabicfont[Script=Arabic,ItalicFont=*,Scale=MatchLowercase,Path=\fontpath]{ScheherazadeRegOT_Jazm.ttf}
-	\AdditionalFontImprint{ScheherazadeRegOT}}
+	\AdditionalFontImprint{SIL Scheherazade}}
 }
 \DeclareVoidOption{hebrewfont}{
 	\newfontfamily\hebrewfont[Script=Hebrew,ItalicFont=*, Scale=0.9]{SBLHebrew.ttf}
