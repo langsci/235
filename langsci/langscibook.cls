@@ -1405,8 +1405,8 @@ Storage and cataloguing done by FU Berlin \\[3ex]
 	doi=false,
 	url=false,
 	eprint=false,
-        autolang=hyphen,
-        useprefix=true,
+    autolang=hyphen,
+    sorting=nycot,
 	backend=\lsBiblatexBackend,
 	indexing=cite,
 	\iflsCollection\else
