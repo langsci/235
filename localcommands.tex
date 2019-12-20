@@ -3,8 +3,6 @@
 \let\theauthor\@author 
 \makeatother
 
-
-
 \newcommand{\togglepaper}[1][0]{ 
   \bibliography{../localbibliography}
   \papernote{\scriptsize\normalfont
@@ -30,7 +28,10 @@
 }}{\ifdefvoid{#3}{}{#3 }}{}{\AtEndDocument{\typeout{mkbibindexname could
 not be patched.}}}
 
-\newcommand{\R}{r\kern-.05ex{̣}\kern.05ex}
+%command for italic r with dot below with horizontal correction to put the dot in the prolongation of the vertical stroke
+%for some reason, the dot is larger than expected, so we explicitly reduce the font size (to \small)
+%for the time being, the font is set to an absolute value. To be more robust, a relative reduction would be better, but this might not be required right now
+\newcommand{\R}{r\kern-.05ex{\small{̣}}\kern.05ex}
 
 
 \DeclareLabeldate{%
