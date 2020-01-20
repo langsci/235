@@ -81,6 +81,8 @@
 \newcommand{\lsp}{Language Science Press\xspace}
 \newcommand{\lsSeriesNumber}{??}
 \newcommand{\lsISSN}{??}
+\newcommand{\lsISSNprint}{??}
+\newcommand{\lsISSNelectronic}{??}
 \newcommand{\lsISBNdigital}{000-0-000000-00-0}
 \newcommand{\lsISBNhardcover}{000-0-000000-00-0}
 \newcommand{\lsISBNsoftcover}{000-0-000000-00-0}
@@ -230,8 +232,9 @@
 % 	\newcommand{\kr}[1]{{\sffamily #1}}
 % 	\AdditionalFontImprint{Korean}}
 \DeclareVoidOption{arabicfont}{
-	\AtEndPreamble{\newfontfamily\arabicfont[Script=Arabic,ItalicFont=*,Scale=MatchLowercase,Path=\fontpath]{ScheherazadeRegOT_Jazm.ttf}
-	\AdditionalFontImprint{SIL Scheherazade}}
+	\newfontfamily\arabicfont[Script=Arabic,ItalicFont=*,Scale=1.4]{arabtype.ttf}
+% 	\newcommand{\textarabic}[1]{{\arabicfont #1}}
+	\AdditionalFontImprint{Arabtype}
 }
 \DeclareVoidOption{hebrewfont}{
 	\newfontfamily\hebrewfont[Script=Hebrew,ItalicFont=*, Scale=0.9]{SBLHebrew.ttf}
@@ -1010,7 +1013,11 @@
 
 \IfFileExists{\seriesinfopath \lsSeries-info.tex}{\input{\seriesinfopath\lsSeries-info}}{
   Series information: \seriesinfopath \lsSeries-info.tex not found!}
-
+  
+\IfStrEq{\lsISSNprint}{??}   % \IfStrEq from xstring
+  {}
+  {\vfill\hfill ISSN (print): \lsISSNprint\\
+         \hfill ISSN (electronic): \lsISSNelectronic\\} 
 \IfStrEq{\lsISSN}{??}   % \IfStrEq from xstring
   {}
   {\vfill\hfill ISSN: \lsISSN} 
@@ -1159,11 +1166,16 @@ ISBN: &
 }
 \end{tabular}
 
-\IfStrEq{\lsISSN}{??}   % \IfStrEq from xstring
+\IfStrEq{\lsISSNprint}{??}   % \IfStrEq from xstring
   {}
-  {ISSN: \lsISSN}
+  {ISSN (print): \lsISSNprint\\
+   ISSN (electronic): \lsISSNelectronic\\} 
+\IfStrEq{\lsISSN}{??}  
+  {}
+  {ISSN: \lsISSN} 
+ 
 
-\IfStrEq{\lsBookDOI}{??}    % \IfStrEq from xstring
+\IfStrEq{\lsBookDOI}{??}     
   {{\color{red} no DOI}}
   {\doi{\lsBookDOI}}\\
 \IfStrEq{\lsID}{000}{\color{red} ID not assigned!}{%  
@@ -1200,8 +1212,9 @@ Typesetting software: \XeLaTeX
 \bigskip
 
 Language Science Press\\
-Unter den Linden 6\\
-10099 Berlin, Germany\\
+Xhain\\
+Grünberger Str. 16\\
+10243 Berlin, Germany\\
 \href{http://langsci-press.org}{langsci-press.org}
 
 \vfill
@@ -1395,6 +1408,7 @@ Storage and cataloguing done by FU Berlin \\[3ex]
 	natbib=true, 
 	style=\bibstylepath langsci-unified,
 	citestyle=\bibstylepath langsci-unified,
+	datamodel=\bibstylepath langsci   % add authauthor and autheditor as possible fields to bibtex entries
 	useprefix = true, %sort von, van, de where they should appear
 	%refsection=chapter,
 	maxbibnames=99,
@@ -1405,14 +1419,12 @@ Storage and cataloguing done by FU Berlin \\[3ex]
 	doi=false,
 	url=false,
 	eprint=false,
-    autolang=hyphen,
-    sorting=nycot,
+	autolang=hyphen,
 	backend=\lsBiblatexBackend,
 	indexing=cite,
 	\iflsCollection\else
-		toc=bib, 		% make bibliography appear in toc
-  \fi
-  datamodel=\bibstylepath langsci   % add authauthor and autheditor as possible fields to bibtex entries
+		toc=bib, % make bibliography appear in toc
+	\fi
 ]{biblatex}
 
 % If the user provided a shortauthor in the bibtex entry, we use the authentic author (as with the

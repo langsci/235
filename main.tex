@@ -1,10 +1,11 @@
-\documentclass[output=book,modfonts,nonflat,collection,collectionchapter
-		,colorlinks,citecolor=brown,
-		arabicfont
-% 		,draft,draftmode
+\documentclass[output=book,modfonts,nonflat,collection,collectionchapter,colorlinks,citecolor=brown
+% 		,arabicfont
+% 		,draft,
+		draftmode
 % 		,showindex
 	       ,multiauthors
-	      % ,nobabel
+	      ,nobabel
+% 	      ,smallfont
 		  ]{langsci/langscibook}                              
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  
@@ -24,30 +25,32 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 %%%             Frontmatter                      %%% 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newfontfamily\arabicfont[Script=Arabic,ItalicFont=*,Scale=MatchLowercase,Path=\fontpath]{ScheherazadeRegOT_Jazm.ttf}
+	\AdditionalFontImprint{SIL Scheherazade}
 \begin{document}         
 \maketitle                
 \frontmatter
-% %% uncomment if you have preface and/or acknowledgements
+%% uncomment if you have preface and/or acknowledgements
 
 \currentpdfbookmark{Contents}{name} % adds a PDF bookmark
 \tableofcontents
-% \include{chapters/preface}
-% \include{chapters/acknowledgments}
+\include{chapters/preface}
+\include{chapters/acknowledgments}
 
-% %% Additional prefaces and/or introductions that also have authors
+%% Additional prefaces and/or introductions that also have authors
 % \lsCollectionPaperFrontmatterMode % Enter the Frontmatter Mode. 
 % \includepaper{chapters/prefaceEd}
-% % \includepaper{chapters/prefaceEd2}
-% \lsCollectionPaperMainmatterMode % Leave the Frontmatter Mode 
+% \includepaper{chapters/prefaceEd2}
+% \lsCollectionPaperdMainmatterMode % Leave the Frontmatter Mode 
 % \setcounter{chapter}{0} % Reset the chapter counter so that preceeding prefaces are not counted
-% %% 
+%% 
 \mainmatter           
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-%%%             Chapters                         %%% 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%%             Chapters                         %%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  
-\newcommand{\lsCollectionPaperFirstPage}{1}
-\newcommand{\lsCollectionPaperLastPage}{1}
+% \newcommand{\lsCollectionPaperFirstPage}{1}
+% \newcommand{\lsCollectionPaperLastPage}{1}
 
 %% Chapters %%
 
@@ -55,49 +58,49 @@
 %%%%%%
 % https://www.overleaf.com/12600941fztxxmsqthkt
 
-%\includepaper{chapters/introduction}
+% \includepaper{chapters/introduction}
 
 \part{Contact-induced change in varieties of Arabic}
 
-%%%%%%
-%\includepaper{chapters/aljallad} % pre-Islamic (checked)%%ready PR
-%\includepaper{chapters/vanputten} % Classical and MSA (checked)%%ready PR
-%\includepaper{chapters/prochazka} % Iraq, Syria etc. (checked) %%ready PR
-%\includepaper{chapters/leitner} % Khuzestan (checked) %%ready PR
-%\includepaper{chapters/akkus} % Turkey (checked)%%ready PR
-%\includepaper{chapters/walter} % CMA (checked)%%ready PR
-%\includepaper{chapters/benkato} % Maghrebi (checked)%%ready PR
-%\includepaper{chapters/heath} % Moroccan (checked)%%ready PR
-%\includepaper{chapters/vicente} % Andalusi (checked)%%ready PR
-%\includepaper{chapters/tainecheikh} % Hassaniyya (checked)
-%\includepaper{chapters/lucasceplo}  % Maltese (checked)%%ready PR
-%\includepaper{chapters/owens} % Nigeria (checked)%%ready PR
-%\includepaper{chapters/avram}  % Pidgins etc. (checked)%%ready PR
-%\includepaper{chapters/danna} % Diaspora (checked) %%ready PR
-
 %%%%%
+\includepaper{chapters/aljallad} % pre-Islamic (checked)%%ready PR
+\includepaper{chapters/vanputten} % Classical and MSA (checked)%%ready PR
+\includepaper{chapters/prochazka} % Iraq, Syria etc. (checked) %%ready PR
+\includepaper{chapters/leitner} % Khuzestan (checked) %%ready PR
+\includepaper{chapters/akkus} % Turkey (checked)%%ready PR
+\includepaper{chapters/walter} % CMA (checked)%%ready PR
+\includepaper{chapters/benkato} % Maghrebi (checked)%%ready PR
+\includepaper{chapters/heath} % Moroccan (checked)%%ready PR
+\includepaper{chapters/vicente} % Andalusi (checked)%%ready PR
+\includepaper{chapters/tainecheikh} % Hassaniyya (checked)
+\includepaper{chapters/lucasceplo}  % Maltese (checked)%%ready PR
+\includepaper{chapters/owens} % Nigeria (checked)%%ready PR
+\includepaper{chapters/avram}  % Pidgins etc. (checked)%%ready PR
+\includepaper{chapters/danna} % Diaspora (checked) %%ready PR
+
+%%%%
 \part{Language change through contact with Arabic}
-%%%%%
-%\includepaper{chapters/vanhove} % Beja  (checked)%%ready PR
-%\includepaper{chapters/souag} % Berber  (checked) %%ready PR
-%\includepaper{chapters/bettega} % MSAL (checked)%%ready PR
-%\includepaper{chapters/coghill} % NENA (checked)%%ready PR
-%\includepaper{chapters/gaszi} % Iranian (checked)%%ready PR
-%\includepaper{chapters/opengin} % Opengin Kurdish (checked)%%ready PR
+%%%%
+\includepaper{chapters/vanhove} % Beja  (checked)%%ready PR
+\includepaper{chapters/souag} % Berber  (checked) %%ready PR
+\includepaper{chapters/bettega} % MSAL (checked)%%ready PR
+\includepaper{chapters/coghill} % NENA (checked)%%ready PR
+\includepaper{chapters/gaszi} % Iranian (checked)%%ready PR
+\includepaper{chapters/opengin} % Opengin Kurdish (checked)%%ready PR
 \includepaper{chapters/herin} % Northern Domari (checked)%%ready PR
-%\includepaper{chapters/matras} % Palestinian Domari (checked)%%ready PR
-%\includepaper{chapters/nolan} % Lingua Franca (checked) %%ready PR
+\includepaper{chapters/matras} % Palestinian Domari (checked)%%ready PR
+\includepaper{chapters/nolan} % Lingua Franca (checked) %%ready PR
 
-%%%%%
+%%%%
 \part{Domains of contact-induced change across Arabic varieties}
-%%%%%
+%%%%
  
-%\includepaper{chapters/alwer} % Al-Wer new dialects (checked)%%ready PR
-%\includepaper{chapters/cotter} % dialect contact (checked)%%ready PR
-%\includepaper{chapters/leddy} % grammaticalization (checked)%%ready PR
-%\includepaper{chapters/calquing}  %(checked)%%ready PR
-%\includepaper{chapters/negation} %(checked)  %%ready PR
-%\includepaper{chapters/hellmuth} % intonation (checked)%%ready PR    
+\includepaper{chapters/alwer} % Al-Wer new dialects (checked)%%ready PR
+\includepaper{chapters/cotter} % dialect contact (checked)%%ready PR
+\includepaper{chapters/leddy} % grammaticalization (checked)%%ready PR
+\includepaper{chapters/calquing}  %(checked)%%ready PR
+\includepaper{chapters/negation} %(checked)  %%ready PR
+\includepaper{chapters/hellmuth} % intonation (checked)%%ready PR    
 
 
 
@@ -105,5 +108,5 @@
 %%%             Backmatter                       %%% 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  
-\input{backmatter.tex} 
+% \input{backmatter.tex} 
 \end{document}  

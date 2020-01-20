@@ -31,7 +31,7 @@
   \def\printlabeldateextra{\printdateextralabel}
 }%
 
-\ExecuteBibliographyOptions{sorting=nycot,abbreviate,dateabbrev=false,useprefix=false}
+\ExecuteBibliographyOptions{sorting=nyt,abbreviate,dateabbrev=false,useprefix=false}
 
 % biblatex by default calls biblatex.def, we add to this authoryear.bbx, which in turn loads standard.bbx. So, sp-biblatex.bbx is built on top of those styles; once authoryear.bbx is loaded, we tell it not to put in dashes for repeated authors (in accordance with the Unified Stylesheet)
 
@@ -110,46 +110,8 @@
      \ifdefvoid{#4}{}{\addcomma\bibnamedelimd\mkbibnamesuffix{#4}\isdot}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Sort the bibliography, in particular pay
-% respect to the cite order
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\let\DeclareSortingTemplate\DeclareSortingScheme % Compatibility with older versions of biblatex
-\DeclareSortingTemplate{nycot}{%name-year-citeorder-title, based on nyt from biblatex.def
-  \sort{
-    \field{presort}
-  }
-  \sort[final]{
-    \field{sortkey}
-  }
-  \sort{
-    \field{sortname}
-    \field{author}
-    \field{editor}
-    \field{translator}
-    \field{sorttitle}
-    \field{title}
-  }
-  \sort{
-    \field{sortyear}
-    \field{year}
-  }
-  \sort{
-    \citeorder
-  }
-  \sort{
-    \field{sorttitle}
-    \field{title}
-  }
-  \sort{
-    \field{volume}
-    \literal{0}
-  }
-}    
-     
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Various bibmacros used in producing the bibliography
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 
 \renewbibmacro*{date+extrayear}{%
   \iffieldundef{labelyear}
