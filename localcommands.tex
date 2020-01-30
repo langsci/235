@@ -49,3 +49,12 @@ not be patched.}}}
   \iffieldequalstr{labeldatesource}{pubstate}{}
   {\newunit\newblock\printfield{pubstate}}
 }
+
+\ExecuteBibliographyOptions{sorting=nycot} % Somehow biblatex does not accept this option if it is supplied only in the .bbx file. Further investigation recommended. FK
+\newfontfamily\arabicfont[Script=Arabic,ItalicFont=*,Scale=MatchLowercase,Path=\fontpath]{ScheherazadeRegOT_Jazm.ttf}
+\AdditionalFontImprint{SIL Scheherazade}
+% https://tex.stackexchange.com/questions/440461/sorting-biblatex-bibliography-by-last-name-beginning-with-al?rq=1
+\DeclareNosort{
+  % strip some diacritics when sorting names
+  \nosort{setnames}{\regexp{[\x{2bf}\x{2018}]}}
+}

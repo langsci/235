@@ -12,21 +12,16 @@
 \input{localmetadata.tex}
 \input{localpackages.tex}
 \input{localhyphenation.tex}
-\input{localcommands.tex} 
+
 \bibliography{localbibliography}
-% https://tex.stackexchange.com/questions/440461/sorting-biblatex-bibliography-by-last-name-beginning-with-al?rq=1
-\DeclareNosort{
-  % strip some diacritics when sorting names
-  \nosort{setnames}{\regexp{[\x{2bf}\x{2018}]}}
-}
+\input{localcommands.tex} 
 
 \WarningsOff[microtype]
 \WarningFilter{microtype}{Unknown slot} 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 %%%             Frontmatter                      %%% 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newfontfamily\arabicfont[Script=Arabic,ItalicFont=*,Scale=MatchLowercase,Path=\fontpath]{ScheherazadeRegOT_Jazm.ttf}
-	\AdditionalFontImprint{SIL Scheherazade}
+
 \begin{document}         
 \maketitle                
 \frontmatter
@@ -58,7 +53,7 @@
 %%%%%%
 % https://www.overleaf.com/12600941fztxxmsqthkt
 
-%\includepaper{chapters/introduction}
+\includepaper{chapters/introduction}
 
 \part{Contact-induced change in varieties of Arabic}
 
