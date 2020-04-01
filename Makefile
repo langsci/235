@@ -272,6 +272,9 @@ main.snd: main.bbl
 	sed -i -e 's/indexentry {Sana’a/indexentry {Arabic!Sana’a/g' main.ldx
 	sed -i -e '/indexentry {Arabic|hyperpage}/d' main.ldx
 	sed -i -e '/indexentry {Arabic|infn /d' main.ldx
+	sed -i -e 's/@Al-/@Al/g' main.adx
+	sed -i -e 's/@El-/@El/g' main.adx
+	sed -i -e 's/@al-/@al/g' main.adx
 	python3 fixindex.py
 	mv mainmod.adx main.adx
 	makeindex -o main.and main.adx
