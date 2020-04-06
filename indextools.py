@@ -64,6 +64,7 @@ def processline(s):
             ignoredic[sortstring] = True
         if has_at:
             result = s.replace("%s@" % sortstring, "%s@" % processedstring)
+            print(result)
             return result
         else:
             result = s.replace(sortstring, "%s@%s" % (processedstring,sortstring))
