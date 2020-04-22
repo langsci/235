@@ -18,8 +18,9 @@
 % \def\exfont{\it}
 
 \usepackage{enumitem}
-\newlist{furtherreading}{description}{1}
-\setlist[furtherreading]{font=\normalfont,labelsep=\widthof{~},noitemsep,align=left,leftmargin=\parindent,labelindent=0pt,labelwidth=-\parindent}
+\newlist{furtherreading}{itemize}{1}
+% \setlist[furtherreading]{font=\normalfont,labelsep=\widthof{~},noitemsep,align=left,leftmargin=\parindent,labelindent=0pt,labelwidth=-\parindent}
+\setlist[furtherreading]{label=\adfhalfrightarrowhead,leftmargin=*,noitemsep}
 \newlist{altdescription}{description}{1}
 \setlist[altdescription]{font=\normalfont,style=nextline}
 \usepackage{phonetic}
