@@ -34,7 +34,7 @@ main.snd: main.bbl
 	sed -i -e 's/indexentry {Antioch/indexentry {Domari!Antioch/g' main.ldx
 	sed -i -e 's/indexentry {Aswan/indexentry {Arabic!Aswan/g' main.ldx
 	sed -i -e 's/indexentry {Awjila/indexentry {Berber!Awjila/g' main.ldx
-	sed -i -e 's/indexentry {Āzəḫ/indexentry {Arabic!Āzəḫ/g' main.ldx
+	sed -i -e 's/indexentry {Āzəḫ/indexentry {Arabic!Azeh@Āzəḫ/g' main.ldx
 	sed -i -e 's/indexentry {Badini/indexentry {Kurdish!Kurmanji!Badini/g' main.ldx
 	sed -i -e 's/indexentry {Baggara/indexentry {Arabic!Baggara/g' main.ldx
 	sed -i -e 's/indexentry {Baghdadi/indexentry {Arabic!Baghdad/g' main.ldx
@@ -61,6 +61,7 @@ main.snd: main.bbl
 	sed -i -e 's/indexentry {Central Asian/indexentry {Arabic!Central Asian/g' main.ldx
 	sed -i -e 's/indexentry {Central Kurdish/indexentry {Kurdish!Central/g' main.ldx
 	sed -i -e 's/indexentry {Central Semitic/indexentry {Semitic!Central/g' main.ldx
+	sed -i -e 's/indexentry {ChA/indexentry {Arabic!Chadian \(ChA\)/g' main.ldx
 	sed -i -e 's/indexentry {Chadian/indexentry {Arabic!Chadian \(ChA\)/g' main.ldx
 	sed -i -e 's/indexentry {Cilician/indexentry {Arabic!Cilician/g' main.ldx
 	sed -i -e 's/indexentry {Cilicia/indexentry {Arabic!Cilician/g' main.ldx
@@ -92,11 +93,11 @@ main.snd: main.bbl
 	sed -i -e 's/indexentry {Gulf/indexentry {Arabic!Gulf \(GA\)/g' main.ldx
 	sed -i -e 's/indexentry {Gz\./indexentry {Gəʕəz \(Gz.\)/g' main.ldx
 	sed -i -e 's/indexentry {Hakitia/indexentry {Spanish!Hakitia/g' main.ldx
-	sed -i -e 's/indexentry {Ḥapəs/indexentry {Arabic!Ḥapəs/g' main.ldx
-	sed -i -e 's/indexentry {Ḥarsūsi/indexentry {South Arabian!Modern \(MSAL\)!Ḥarsūsi/g' main.ldx
+	sed -i -e 's/indexentry {Ḥapəs/indexentry {Arabic!Hapes@Ḥapəs/g' main.ldx
+	sed -i -e 's/indexentry {Ḥarsūsi/indexentry {South Arabian!Modern \(MSAL\)!Harsusi@Ḥarsūsi/g' main.ldx
 	sed -i -e 's/indexentry {Hasköy/indexentry {Arabic!Hasköy/g' main.ldx
-	sed -i -e 's/indexentry {Ḥassāniyya/indexentry {Arabic!Ḥassāniyya/g' main.ldx
-	sed -i -e 's/indexentry {Ḥiǧāzi/indexentry {Arabic!Ḥiǧāzi/g' main.ldx
+	sed -i -e 's/indexentry {Ḥassāniyya/indexentry {Arabic!Hassaniyya@Ḥassāniyya/g' main.ldx
+	sed -i -e 's/indexentry {Ḥiǧāzi/indexentry {Arabic!Higazi@Ḥiǧāzi/g' main.ldx
 	sed -i -e 's/indexentry {IA/indexentry {Arabic!Iraqi \(IA\)/g' main.ldx
 	sed -i -e 's/indexentry {Imperial Aramaic/indexentry {Aramaic!Imperial/g' main.ldx
 	sed -i -e 's/indexentry {Imperial/indexentry {Aramaic!Imperial/g' main.ldx
@@ -137,7 +138,7 @@ main.snd: main.bbl
 	sed -i -e 's/indexentry {Mahryōt/indexentry {South Arabian!Modern \(MSAL\)!Mehri!Mahriyōt/g' main.ldx
 	sed -i -e 's/indexentry {Majorcan Catalan/indexentry {Catalan!Majorcan/g' main.ldx
 	sed -i -e 's/indexentry {Majorcan Spanish/indexentry {Spanish!Majorcan/g' main.ldx
-	sed -i -e 's/indexentry {Mali/indexentry {Arabic!Ḥassāniyya!Mali/g' main.ldx
+	sed -i -e 's/indexentry {Mali/indexentry {Arabic!Hassaniyya@Ḥassāniyya!Mali/g' main.ldx
 	sed -i -e 's/indexentry {Maltese English/indexentry {English!Maltese/g' main.ldx
 	sed -i -e 's/indexentry {Mardin/indexentry {Arabic!Mardin/g' main.ldx
 	sed -i -e 's/indexentry {Marrakech/indexentry {Arabic!Marrakech/g' main.ldx
@@ -156,8 +157,8 @@ main.snd: main.bbl
 	sed -i -e 's/indexentry {Mosul/indexentry {Arabic!Mosul/g' main.ldx
 	sed -i -e 's/indexentry {Mozabite/indexentry {Berber!Mozabite/g' main.ldx
 	sed -i -e 's/indexentry {MSAL/indexentry {South Arabian!Modern \(MSAL\)/g' main.ldx
-	sed -i -e 's/indexentry {Modern Standard Arabic/indexentry {Arabic!Modern Standard \(MSA\)/g' main.ldx
 	sed -i -e 's/indexentry {Modern Standard/indexentry {Arabic!Modern Standard \(MSA\)/g' main.ldx
+	sed -i -e 's/indexentry {Modern Standard Arabic/indexentry {Arabic!Modern Standard \(MSA\)/g' main.ldx
 	sed -i -e 's/indexentry {MSA/indexentry {Arabic!Modern Standard \(MSA\)/g' main.ldx
 	sed -i -e 's/indexentry {Mutki-Sason/indexentry {Arabic!Mutki-Sason/g' main.ldx
 	sed -i -e 's/indexentry {Nabataean Aramaic/indexentry {Aramaic!Nabataean/g' main.ldx
@@ -199,7 +200,7 @@ main.snd: main.bbl
 	sed -i -e 's/indexentry {Shawiya/indexentry {Berber!Shawiya/g' main.ldx
 	sed -i -e 's/indexentry {Śḥerɛt/indexentry {South Arabian!Modern \(MSAL\)!Śḥerɛt/g' main.ldx
 	sed -i -e 's/indexentry {Sicilian Arabic/indexentry {Arabic!Sicilian/g' main.ldx
-	sed -i -e 's/indexentry {Šiḥḥī/indexentry {Arabic!Šiḥḥī/g' main.ldx
+	sed -i -e 's/indexentry {Šiḥḥī/indexentry {Arabic!Sihhi@Šiḥḥī/g' main.ldx
 	sed -i -e 's/indexentry {Siirt/indexentry {Arabic!Siirt/g' main.ldx
 	sed -i -e 's/indexentry {Siwa/indexentry {Berber!Siwa/g' main.ldx
 	sed -i -e 's/indexentry {Siwi/indexentry {Berber!Siwa/g' main.ldx
@@ -231,7 +232,7 @@ main.snd: main.bbl
 	sed -i -e 's/indexentry {Tunisian Berber/indexentry {Berber!Tunisian \(TB\)/g' main.ldx
 	sed -i -e 's/indexentry {Tunisian/indexentry {Arabic!Tunisian \(TA\)/g' main.ldx
 	sed -i -e 's/indexentry {Tunis/indexentry {Arabic!Tunis/g' main.ldx
-	sed -i -e 's/indexentry {Ṭuroyo/indexentry {Aramaic!Ṭuroyo/g' main.ldx
+	sed -i -e 's/indexentry {Ṭuroyo/indexentry {Aramaic!Turoyo@Ṭuroyo/g' main.ldx
 	sed -i -e 's/indexentry {Uzbekistan/indexentry {Arabic!Uzbekistan/g' main.ldx
 	sed -i -e 's/indexentry {Vulgar/indexentry {Latin!Vulgar/g' main.ldx
 	sed -i -e 's/indexentry {Western Neo-Aramaic/indexentry {Neo-Aramaic!Western/g' main.ldx
@@ -251,7 +252,6 @@ main.snd: main.bbl
 	sed -i -e 's/indexentry {Aram\./indexentry {Aramaic/g' main.ldx
 	sed -i -e 's/indexentry {Gk\./indexentry {Greek/g' main.ldx
 	sed -i -e 's/indexentry {Kr\./indexentry {Kurdish/g' main.ldx
-	sed -i -e 's/indexentry {ChA/indexentry {Arabic!Chadian/g' main.ldx
 	sed -i -e 's/indexentry {Christian Bəḥzāni Aramaic/indexentry {Aramaic!Christian Bəḥzāni/g' main.ldx
 	sed -i -e 's/indexentry {CSyr/indexentry {Aramaic!Syriac/g' main.ldx
 	sed -i -e 's/indexentry {Ethio-Semitic/indexentry {Semitic!Ethiopian/g' main.ldx
@@ -272,6 +272,9 @@ main.snd: main.bbl
 	sed -i -e 's/indexentry {Arabic/indexentry {Arabic \(Ar\.\)/g' main.ldx
 	sed -i -e 's/indexentry {Kurdish/indexentry {Kurdish \(Kr\.\)/g' main.ldx
 	sed -i -e 's/indexentry {Persian/indexentry {Persian \(Pers\.\)/g' main.ldx
+	sed -i -e 's/indexentry {Aramaic/indexentry {Aramaic \(Aram\.\)/g' main.ldx
+	sed -i -e 's/indexentry {Greek/indexentry {Greek \(Gk\.\)/g' main.ldx
+	sed -i -e 's/indexentry {Aramaic!Syriac/indexentry {Aramaic!Syriac \(Syr\.\)/g' main.ldx
 	sed -i -e 's/indexentry {El-/indexentry {El/g' main.adx
 	sed -i -e 's/indexentry {Al-/indexentry {Al/g' main.adx
 	sed -i -e 's/indexentry {al-/indexentry {al/g' main.adx
