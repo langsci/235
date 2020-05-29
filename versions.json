@@ -1,12 +1,1 @@
-{"versions": [{"versiontype": "proofreading",
-		"title": "Arabic and contact-induced change",
-		"authors": [{"name": "Christopher Lucas "},{"name":" Stefano Manfredi"}],
-	"license": "CC-BY-4.0",
-	"publishedAt": "2019-10-02T15:59:39.000Z"},
-	{"versiontype": "proofreading_batch2",
-		"title": "Arabic and contact-induced change",
-		"authors": [{"name": "Christopher Lucas "},{"name":" Stefano Manfredi"}],
-	"license": "CC-BY-4.0",
-	"publishedAt": "2020-01-29T15:59:39.000Z"}
-	]
-}
+{"versions": [{"authors": [{"name": "Christopher Lucas "}, {"name": " Stefano Manfredi"}], "title": "Arabic and contact-induced change", "publishedAt": "2019-10-02T15:59:39.000Z", "license": "CC-BY-4.0", "versiontype": "proofreading"}, {"authors": [{"name": "Christopher Lucas "}, {"name": " Stefano Manfredi"}], "title": "Arabic and contact-induced change", "publishedAt": "2020-01-29T15:59:39.000Z", "license": "CC-BY-4.0", "versiontype": "proofreading_batch2"}, {"title": "Arabic and contact-induced change", "versiontype": "first_edition", "license": "CC-BY-4.0", "publishedAt": "2020-05-29T11:36:49.567476", "authors": [{"name": "Christopher Lucas "}, {"name": " Stefano Manfredi"}]}]}
